@@ -33,11 +33,6 @@ Directus edit product:
 
 1. Clone and install dependencies
 
-```
-git clone https://github.com/tohhongxiang123/directus-nextjs.git
-cd directus-nextjs
-npm install
-```
 
 > Note: `npm install` might fail due to `node-gyp` (a dependency within directus). To fix this, run `npm install directus` then `npm install` again
 
@@ -108,11 +103,6 @@ sudo -su postgres psql
 
 5. Clone the repository, and install required packages
 
-```
-git clone https://github.com/tohhongxiang123/directus-nextjs.git
-cd directus-nextjs
-npm ci
-```
 
 6. Create `.env` file and fill it in
 
