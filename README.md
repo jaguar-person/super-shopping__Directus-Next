@@ -73,8 +73,8 @@ scp directus-dump username@host:/home/username/directus-dump
 ```
 sudo apt update
 sudo apt install postgresql postgresql-contrib
-sudo -u postgres createdb shopping-seshuri
-sudo -u postgres psql shopping-seshuri < directus-dump
+sudo -u postgres createdb shopping-super
+sudo -u postgres psql shopping-super < directus-dump
 ```
 
 3. Create a new postgres user. Check that the user exists with the command `\du`
@@ -89,15 +89,15 @@ CREATE USER username WITH SUPERUSER PASSWORD 'password'
 4. Create database and dump data within database
 
 ```
-createdb shopping-seshuri
-psql shopping-seshuri < directus-dump
+createdb shopping-super
+psql shopping-super < directus-dump
 ```
 
 To check whether the database is updated, you can run the following commands:
 
 ```
 sudo -su postgres psql
-\c shopping-seshuri
+\c shopping-super
 \d products
 ```
 
